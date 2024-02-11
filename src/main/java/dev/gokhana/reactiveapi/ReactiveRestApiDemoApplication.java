@@ -27,7 +27,7 @@ public class ReactiveRestApiDemoApplication {
                     new User("Gökhan", ThreadLocalRandom.current().nextInt(1, 100)
                             , new Address("istanbul")),
                     new User("Betül", ThreadLocalRandom.current().nextInt(1, 100), new Address("istanbul")),
-                    new User("Zühtü", ThreadLocalRandom.current().nextInt(1, 100), new Address("istanbul"))
+                    new User("Zühtü", ThreadLocalRandom.current().nextInt(  1, 100), new Address("istanbul"))
             );
             users.flatMap(userService::saveUser)
                     .subscribe(user -> System.out.println("Saved user: " + user));

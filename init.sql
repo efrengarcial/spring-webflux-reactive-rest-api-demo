@@ -15,3 +15,9 @@ CREATE TABLE reactive_user
 
 );
 
+CREATE TABLE customer
+(
+    id         serial PRIMARY KEY,
+    name       VARCHAR(50) NOT NULL,
+    salary     int8 NOT NULL
+);
